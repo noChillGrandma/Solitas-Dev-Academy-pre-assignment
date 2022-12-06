@@ -9,5 +9,6 @@
 7- Only "covered_distance_in_meters" had null values so ran the query: 
 "DELETE FROM trips WHERE covered_distance_in_meters is null"
 This removed all the columns with null values and I was able to mark the column "covered_distance_in_meters" as "Not null".
+8- Implemented foreign key constraints on the table "trips" for the columns "departure_station_id" and "return_station_id" to the "station_id" column in the "stations" table. This to bring to the surface the trips whose departure and return stations we have no location of.
 
  
